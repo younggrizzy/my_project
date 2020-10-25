@@ -18,3 +18,18 @@ foreach ($shop as $key => $availability)
 
 // таблица умножения
 
+$strings = 10;
+$columns = 10;
+
+echo '<table border="1">';
+
+for ($tr = 1; $tr <= $strings; $tr++) {
+    echo '<tr>';
+    for ($td = 1; $td <= $columns; $td++) {
+        echo '<td>' . $tr * $td . '</td>';
+    }
+    echo '</tr>';
+}
+
+echo '</table>';
+
