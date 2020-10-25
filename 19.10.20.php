@@ -2,24 +2,24 @@
 //задача 1
 
 $a=-1;
-if ($a<=1 & $a>=-2)
+if ($a<=1 & $a>=-2) {
     echo "<br>";
-echo "true";
-
+    echo "true";
+}
 //задача 2
 
 $a2=4;
-if ($a2<=-2 || $a2>=1)
+if ($a2<=-2 || $a2>=1) {
     echo "<br>";
-echo "true";
-
+    echo "true";
+}
 //задача 3
 
 $a3=3;
-if ($a3<=-2 || $a3>1 & $a3<=3)
+if ($a3<=-2 || $a3>1 & $a3<=3) {
     echo "<br>";
-echo "true";
-
+    echo "true";
+}
 //задача 4
 
 
