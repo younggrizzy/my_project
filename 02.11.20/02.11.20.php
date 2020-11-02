@@ -18,33 +18,16 @@ for($p=0;$p<count($explode_text);$p++) {
 
 //3
 
-function is_palindrom($subject) {
-    $subject = preg_replace('/\s/', '', $subject);
-    $subject_i = strlen($subject) - 1;
-    $subject_r = '';
-    while( $subject_i >= 0 ) {
-        $subject_r .= $subject[$subject_i];
-        $subject_i --;
-    }
-    if( $subject == $subject_r ) {
-        return true;
-    } else {
-        return false;
-    }
+$text = "KAKAK";
+echo"<br>".$text;
+$reverse= strrev($text);
+echo "<br>".$reverse;
+if($text == $reverse) {
+    echo "<br>".$text." is a palindrom";
 }
-$subject = '123454321';
-if( is_palindrom($subject) ) {
-    echo "Строка <strong>$subject</strong> это палиндром<br/>\n";
-} else {
-    echo "Строка <strong>$subject</strong> это не палиндром<br/>\n";
+else {
+    echo "<br>".$text." is not a palindrom";
 }
-$subject = 'А роза упала на лапу Азора';
-if( is_palindrom($subject) ) {
-    echo "Строка <strong>$subject</strong> это палиндром<br/>\n";
-} else {
-    echo "Строка <strong>$subject</strong> это не палиндром<br/>\n";
-}
-
 //4
 
 $text = 'я очень плохо знаю язык программирования';
