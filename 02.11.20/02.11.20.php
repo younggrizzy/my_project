@@ -51,7 +51,7 @@ $text = 'я очень плохо знаю язык программирован
 $arr = explode(' ', $text);
 $max = $arr[0];
 for ($i=0; $i<count($arr); $i++) {
-    if(strlen($arr[$i]) > strlen($max)){
+    if(mb_strlen($arr[$i]) > mb_strlen($max)){
         $max = $arr[$i];
     }
 }
