@@ -1,10 +1,10 @@
 <?php
-//1
+//1 В произвольном тексте убрать лишние пробелы
 
 $text = "      hello      world     !!!  ";
 echo preg_replace('/[^\S\r\n]+/', ' ', $text);
 
-//2
+//2 В тексте найти и вывести слова длинее трех но не больше пяти символова
 
 $text = "my bro won be like Kanye, but he won't be like morgenstern";
 $explode_text = explode(" ",$text);
@@ -16,7 +16,7 @@ for($p=0;$p<count($explode_text);$p++) {
     }
 }
 
-//3
+//3 определить является ли строка палиндомом
 
 $text = "KAKAK";
 echo"<br>".$text;
@@ -28,7 +28,7 @@ if($text == $reverse) {
 else {
     echo "<br>".$text." is not a palindrom";
 }
-//4
+//4 найти и вывести самое длинное слово
 
 $text = 'я очень плохо знаю язык программирования';
 $arr = explode(' ', $text);
@@ -40,7 +40,7 @@ for ($i=0; $i<count($arr); $i++) {
 }
 echo $max;
 
-//5
+//5 посчитать количество строчный и прописных букв
 
 $text = "My BRO is best";
 echo mb_strlen( preg_replace('/[^A-ZА-ЯЁ]/', '', $text));
